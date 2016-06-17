@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="Inteface generica para añadir reglas de validación al objeto.&#xD;&#xA;Deberemos añadir una regla (IRule) por cada 'if' del código legacy.">
+    <Position X="3.549" Y="0.521" Height="0.944" Width="2.894" />
+  </Comment>
+  <Comment CommentText="Interface genérica para crear el validador del objeto.&#xD;&#xA;Un validador por objeto.&#xD;&#xA;Añadir reglas (IRule) en el constructor.">
+    <Position X="10.764" Y="0.556" Height="0.75" Width="3.346" />
+  </Comment>
+  <Comment CommentText="Objeto a validar">
+    <Position X="12.25" Y="3.903" Height="0.354" Width="1.172" />
+  </Comment>
+  <Comment CommentText="                  Objeto para almacenar el resultado de la regla (IRule).">
+    <Position X="3.299" Y="9.271" Height="0.312" Width="4.7" />
+  </Comment>
+  <Comment CommentText="Validador">
+    <Position X="6.792" Y="3.854" Height="0.313" Width="1.061" />
+  </Comment>
+  <Comment CommentText="Reglas">
+    <Position X="4.764" Y="2.75" Height="5.667" Width="0.818" />
+  </Comment>
+  <Comment CommentText="Regla">
+    <Position X="3.451" Y="2.799" Height="0.312" Width="0.818" />
+  </Comment>
+  <Comment CommentText="Regla">
+    <Position X="3.479" Y="4.792" Height="0.312" Width="0.818" />
+  </Comment>
+  <Comment CommentText="Regla">
+    <Position X="3.486" Y="6.792" Height="0.312" Width="0.818" />
+  </Comment>
+  <Class Name="Schisted.RulesValidator.Core.Entities.TestObject" Collapsed="true">
+    <Position X="12.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\TestObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Schisted.RulesValidator.Core.Entities.ValidateRuleResult">
+    <Position X="4" Y="10" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAJAAAAAA=</HashCode>
+      <FileName>Entities\ValidateRuleResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Schisted.RulesValidator.Core.Rules.TestObjectEmptyRule" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="4.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rules\TestObjectEmptyRule.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Schisted.RulesValidator.Core.Rules.TestObjectNullRule" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rules\TestObjectNullRule.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Schisted.RulesValidator.Core.Rules.TestObjectRangeRule" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="6.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rules\TestObjectRangeRule.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Schisted.RulesValidator.Core.Validators.TestObjectRulesValidator" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAQAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Validators\TestObjectRulesValidator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="Schisted.RulesValidator.Core.Contracts.IRule&lt;TObject&gt;">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IRule.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Schisted.RulesValidator.Core.Contracts.IRulesValidator&lt;TObject&gt;">
+    <Position X="6.75" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Contracts\IRulesValidator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
